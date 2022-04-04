@@ -2,10 +2,10 @@ console.log('ready!');
 document.addEventListener('DOMContentLoaded', function() {
     scrollNav();
 
-    navegacionFija();
+    fixesNav();
 });
 
-function navegacionFija() {
+function fixesNav() {
 
     const navBar = document.querySelector('.header');
 
