@@ -1,0 +1,69 @@
+.gallery {
+    padding: $separation;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    min-width: 100%;
+    @include tablet {
+    padding: $separation 10rem;
+    }
+    h3 {
+        text-align: center;
+        color: $pink;
+        font-weight: $black;
+        border-radius: 60%;
+    }
+}
+
+.gallery-images {
+    list-style: none;
+    margin-top: $separation;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    @include grid(2, $separation);
+    justify-content: space-between;
+    @include tablet {
+        @include grid (4, $separation2);
+    }
+    @include desktop {
+        @include grid (6, $separation2);
+
+    }
+    
+}
+.gallery-images__e {
+    cursor: pointer;
+    border-radius: 1rem;
+    min-width: 100%;
+    max-width: 105%;
+}
+.overlay {
+position: fixed;
+background-color: rgba(0, 0, 0, .5);
+width: 100%;
+height: 100%;
+top: 0;
+display: grid;
+place-items: center;
+}
+
+.overlay__image  {
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 1rem;
+
+}
+.close-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: $white;
+    display: grid;
+    place-items: center;
+    font-weight: $black;
+    font-size: 3rem;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

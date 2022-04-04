@@ -1,0 +1,29 @@
+.festival{
+    @include desktop {
+        @include grid(2, $separation);
+        img{
+            min-width: 100%;
+        }
+    }
+    @include tablet {
+        img{
+            max-width: 50%;
+        }
+
+    }
+    padding: $separation;
+    .festival-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .festival-info__text{
+        h4{
+            color: $pink;
+            font-weight: $bold;
+        }
+        p{
+            line-height: 1.5;
+        }
+    }   
+}

@@ -1,0 +1,31 @@
+{
+  "name": "musicfestival",
+  "version": "1.0.0",
+  "description": "Learning Gulp and SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "Web",
+    "Design"
+  ],
+  "author": "Christian Cordoba",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-webp": "^4.0.1"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "readable-stream": "^3.6.0",
+    "sass": "^1.42.1",
+    "tether": "^2.0.0"
+  }
+}

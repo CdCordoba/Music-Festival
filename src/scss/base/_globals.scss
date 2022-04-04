@@ -1,0 +1,48 @@
+html {
+    font-size: 48.5%;
+    box-sizing: border-box;
+    max-width: 1500px;
+    max-height: 980px;
+}
+*,*:before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    
+    font-family: $mainFont;
+    font-size: 1.6rem;
+    &.fix-body {
+        overflow: hidden;
+    }
+}
+p{
+    font-size: 2rem;
+    color: $black;
+}
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 80%;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+h1 {
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}
+
